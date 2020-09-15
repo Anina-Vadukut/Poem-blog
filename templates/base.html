@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175230556-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-175230556-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+    <title>Poem house</title>
+    <meta name="description" content="Poetry is medicine to soul. A poetry blog where you can read and share your poem online">
+    
+    <style>
+    pre {
+    font-size: 18px;
+    }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/"><i class="text-muted">Poem House</i></a>
+  <!-- Navbar brand yo -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTop">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a class="nav-link" href="/">Home </a> </li>
+      <li class="nav-item"><a class="nav-link" href="/poem">Poems </a> </li>
+      <li class="nav-item"><a class="nav-link" href="/about">About </a> </li>
+      <li class="nav-item"><a class="nav-link" href="/submit">Submit</a> </li>
+      <li class="nav-item"><a class="nav-link" href="/logout">Logout</a> </li>
+   
+    </ul>
+     <div style="margin-left: auto">
+        <form class="form-inline" action="/search" method=post enctype=multipart/form-data>
+            <input class="form-control" type="text" placeholder="Search" name="text">
+        </form>
+    </div>
+  </div>
+</nav>
+
+
+ {% block content %}
+ 
+<div class="container  p-1 my-1">
+  <div class="row">
+    <div class="col-lg" >
+    <img class="d-block" src="static/sea.jpg" width="100%" height="200">
+     <div class="carousel-caption" style="top: 0;"> 
+      <h3>But poetry, beauty, romance, love, these are what we stay alive for...</h3>
+      </div> 
+   </div>
+  </div>
+</div>
+
+
+<div class="container p-3 my-3">
+    <pre>
+    <b>Looking Up</b>  
+    by Anina
+
+    Whenever I miss you
+    I just look up at the sky 
+    And think you are 
+    under the same sky 
+    somewhere
+    Then I don’t feel so alone 
+    anymore
+    
+    <b>End of Tunnel</b>
+    by Anina
+
+    Walked through forest
+    Walked by the sea
+    Hardest walk was when I
+    can't see what's in front of me
+    Putting one foot 
+    in front of another
+    there is light at the 
+    end of tunnel
+    </pre>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<div class="container  p-3 my-3">
+    {% for k, v in records.items() %}
+    <pre>
+       <b>{{ k }}</b>
+{{ v }}
+      </pre>
+    
+    {% endfor %}
+</div>
+{% endblock %} 
